@@ -1,4 +1,5 @@
 # Compile And Install FFmpeg
+
 ([The original link](http://www.osxexperts.net/ffmpeg/ffmpegexperts.html)﻿)
 
 ##STEP 1 - Preparations
@@ -6,7 +7,7 @@
 
 ##STEP 2 - Downloading all necessary source codes
 
-Download all file into a folder named ‘FFmpeg’ on the your disk:
+Download all file into a folder named `FFmpeg` on the your disk:
 ###1、FFmpeg source code
 - Open the Terminal
 - write the following in the Terminal : `git clone git://git.videolan.org/ffmpeg.git ffmpeg`
@@ -142,6 +143,4 @@ More ffmpeg param at [FFmpeg Filters Documentation](https://ffmpeg.org/ffmpeg-fi
 ###3、Convert png to mp4
 
 	ffmpeg -r 10 -f image2 -i frame%03d.png -pix_fmt yuv420p loading.mp4
-
-
 
