@@ -1,8 +1,8 @@
-# Compile And Instal FFmpeg
+# Compile And Install FFmpeg
 ([The original link](http://www.osxexperts.net/ffmpeg/ffmpegexperts.html)﻿)
 
 ##STEP 1 - Preparations
-install XCode(include git)
+###Install `XCode`(include `git`)
 
 ##STEP 2 - Downloading all necessary source codes
 
@@ -33,7 +33,7 @@ Because `FFmpeg` needs several extra codecs you need some other source codes too
 - Download `Xvid` source code
 
 
-> All source code has been downloaded [here]().
+> All source code has been downloaded [here](https://github.com/ljf1239848066/FFmpeg/tree/master/zip).
 
 ##STEP 3 - Compiling all source codes
 Open the Terminal and copy paste every line below marked **BOLD**.
@@ -99,7 +99,7 @@ Open the Terminal and copy paste every line below marked **BOLD**.
 	export CFLAGS="-I${SOURCE}/include"
 	./configure --prefix=${SOURCE} --enable-gpl --enable-pthreads --disable-ffplay --disable-ffserver --enable-libvpx --disable-decoder=libvpx --enable-libmp3lame --enable-libtheora --enable-libvorbis --enable-libx264 --enable-libxvid --enable-avfilter  --enable-filters --arch=x86 --enable-runtime-cpudetect && make -j 4 && make install 
 
-> After doing all the hardcore compiling you are awarded a FFmpeg binary in the `sw/BIN` folder. [Here]() is my binary.
+> After doing all the hardcore compiling you are awarded a FFmpeg binary in the `sw/BIN` folder. [Here](https://github.com/ljf1239848066/FFmpeg/tree/master/bin) is my binary.
 
 
 
@@ -142,5 +142,6 @@ More ffmpeg param at [FFmpeg Filters Documentation](https://ffmpeg.org/ffmpeg-fi
 ###3、Convert png to mp4
 
 	ffmpeg -r 10 -f image2 -i frame%03d.png -pix_fmt yuv420p loading.mp4
+
 
 
